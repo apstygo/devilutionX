@@ -105,6 +105,13 @@
 			remoteGlobalIDString = CE7D9B0514874309BFEA2F57;
 			remoteInfo = smacker;
 		};
+		2ECD62F52545C306003572E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2ECD62962545BC9A003572E3 /* DevilutionX-Dependencies.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 34D0B87450F44510851A49F8;
+			remoteInfo = devilutionx;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -257,6 +264,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				2ECD62F62545C306003572E3 /* PBXTargetDependency */,
 			);
 			name = "DevilutionX-iOS";
 			productName = "DevilutionX-iOS";
@@ -425,6 +433,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2ECD62F62545C306003572E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = devilutionx;
+			targetProxy = 2ECD62F52545C306003572E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2ECD62492545BA56003572E3 /* Main.storyboard */ = {
