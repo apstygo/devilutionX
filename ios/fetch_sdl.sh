@@ -18,8 +18,8 @@ rm SDL2-2.0.9.tar.gz
 rm SDL2_mixer-2.0.4.tar.gz
 rm SDL2_ttf-2.0.15.tar.gz
 
-mkdir -p Dependencies
+mkdir -p SDL
 
-mv SDL2-2.0.9 Dependencies/SDL
-mv SDL2_mixer-2.0.4 Dependencies/SDL2_mixer
-mv SDL2_ttf-2.0.15 Dependencies/SDL2_ttf
+mv SDL2-2.0.9 SDL/SDL
+mv SDL2_mixer-2.0.4 SDL/SDL2_mixer
+mv SDL2_ttf-2.0.15 SDL/SDL2_ttf
