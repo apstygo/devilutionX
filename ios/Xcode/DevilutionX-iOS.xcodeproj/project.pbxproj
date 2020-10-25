@@ -574,6 +574,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../../SourceS",
+					"${SRCROOT}/../../SourceX",
+					"${SRCROOT}/../../Source",
+					"${SRCROOT}/../SDL/SDL/src/video/uikit",
+				);
 				INFOPLIST_FILE = "DevilutionX-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -592,6 +598,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../../SourceS",
+					"${SRCROOT}/../../SourceX",
+					"${SRCROOT}/../../Source",
+					"${SRCROOT}/../SDL/SDL/src/video/uikit",
+				);
 				INFOPLIST_FILE = "DevilutionX-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
