@@ -1,4 +1,4 @@
-rm -rf Xcode
+rm -rf Dependencies
 
 cmake . \
     -G Xcode \
