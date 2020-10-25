@@ -4,28 +4,11 @@ cmake_minimum_required(VERSION 3.18)
 
 project("DevilutionX-Dependencies")
 
-set(PRODUCT_NAME ${APP_NAME})
-set(EXECUTABLE_NAME ${APP_NAME})
-set(MACOSX_BUNDLE_EXECUTABLE_NAME ${APP_NAME})
-set(MACOSX_BUNDLE_INFO_STRING ${APP_BUNDLE_IDENTIFIER})
-set(MACOSX_BUNDLE_GUI_IDENTIFIER ${APP_BUNDLE_IDENTIFIER})
-set(MACOSX_BUNDLE_BUNDLE_NAME ${APP_BUNDLE_IDENTIFIER})
-set(MACOSX_BUNDLE_ICON_FILE "")
-set(MACOSX_BUNDLE_LONG_VERSION_STRING ${APP_VERSION})
-set(MACOSX_BUNDLE_SHORT_VERSION_STRING ${APP_VERSION})
-set(MACOSX_BUNDLE_BUNDLE_VERSION ${APP_VERSION})
-set(MACOSX_BUNDLE_COPYRIGHT "Unlicensed")
-set(MACOSX_DEPLOYMENT_TARGET ${DEPLOYMENT_TARGET})
-
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_THREAD_PREFER_PTHREAD ON)
 set(THREADS_PREFER_PTHREAD_FLAG ON)
-
-if(HELLFIRE)
-  add_definitions(-DHELLFIRE)
-endif()
 
 # 3rd party libs
 
@@ -178,6 +161,12 @@ add_library(devilutionx STATIC
   ../SourceX/main.cpp
   ../Packaging/resources/CharisSILB.ttf)
 
+file(GENERATE OUTPUT config.h CONTENT
+"#pragma once
+#define PROJECT_NAME \"DevilutionX-iOS\"
+#define PROJECT_VERSION \"1.0}\"
+")
+
 # Linking and dependencies
 
 find_package(Threads REQUIRED)
@@ -185,7 +174,7 @@ find_package(Threads REQUIRED)
 target_include_directories(devilution PUBLIC
   ../Source
   ../SourceS 
-  ..)
+  ${CMAKE_CURRENT_BINARY_DIR})
 
 target_include_directories(devilution PRIVATE 
   SDL/SDL/include
@@ -208,3 +197,83 @@ target_link_libraries(devilutionx PRIVATE
   StormLib
   smacker
   Radon)
+
+# Definitions
+
+if(HELLFIRE)
+  add_definitions(-DHELLFIRE)
+endif()
+
+foreach(
+  def_name
+  NONET
+  PREFILL_PLAYER_NAME
+)
+if(${def_name})
+  list(APPEND def_list ${def_name})
+endif()
+endforeach(def_name)
+
+# Defines with value
+foreach(
+  def_name
+  SDL1_VIDEO_MODE_WIDTH
+  SDL1_VIDEO_MODE_HEIGHT
+  TTF_FONT_DIR
+  TTF_FONT_NAME
+  SDL1_VIDEO_MODE_BPP
+  SDL1_VIDEO_MODE_FLAGS
+  HAS_KBCTRL
+  KBCTRL_BUTTON_DPAD_LEFT
+  KBCTRL_BUTTON_DPAD_RIGHT
+  KBCTRL_BUTTON_DPAD_UP
+  KBCTRL_BUTTON_DPAD_DOWN
+  KBCTRL_BUTTON_B
+  KBCTRL_BUTTON_A
+  KBCTRL_BUTTON_Y
+  KBCTRL_BUTTON_X
+  KBCTRL_BUTTON_LEFTSTICK
+  KBCTRL_BUTTON_RIGHTSTICK
+  KBCTRL_BUTTON_RIGHTSHOULDER
+  KBCTRL_BUTTON_LEFTSHOULDER
+  KBCTRL_BUTTON_START
+  KBCTRL_BUTTON_BACK
+  KBCTRL_IGNORE_1
+  JOY_AXIS_LEFTX
+  JOY_AXIS_LEFTY
+  JOY_AXIS_RIGHTX
+  JOY_AXIS_RIGHTY
+  JOY_HAT_DPAD_UP_HAT
+  JOY_HAT_DPAD_UP
+  JOY_HAT_DPAD_DOWN_HAT
+  JOY_HAT_DPAD_DOWN
+  JOY_HAT_DPAD_LEFT_HAT
+  JOY_HAT_DPAD_LEFT
+  JOY_HAT_DPAD_RIGHT_HAT
+  JOY_HAT_DPAD_RIGHT
+  JOY_BUTTON_DPAD_LEFT
+  JOY_BUTTON_DPAD_RIGHT
+  JOY_BUTTON_DPAD_UP
+  JOY_BUTTON_DPAD_DOWN
+  JOY_BUTTON_B
+  JOY_BUTTON_A
+  JOY_BUTTON_Y
+  JOY_BUTTON_X
+  JOY_BUTTON_LEFTSTICK
+  JOY_BUTTON_RIGHTSTICK
+  JOY_BUTTON_RIGHTSHOULDER
+  JOY_BUTTON_LEFTSHOULDER
+  JOY_BUTTON_TRIGGERLEFT
+  JOY_BUTTON_TRIGGERRIGHT
+  JOY_BUTTON_START
+  JOY_BUTTON_BACK
+  REMAP_KEYBOARD_KEYS
+)
+  if(DEFINED ${def_name})
+    list(APPEND def_list ${def_name}=${${def_name}})
+  endif()
+endforeach(def_name)
+
+foreach(target devilution devilutionx)
+  target_compile_definitions(${target} PRIVATE ${def_list})
+endforeach(target)
