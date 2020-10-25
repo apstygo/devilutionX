@@ -132,7 +132,7 @@ add_library(devilution STATIC
 add_library(devilutionx STATIC
   ../SourceX/dx.cpp
   ../SourceX/controls/devices/game_controller.cpp
-  ../SourceX/controls/devices/joystick.cpp 
+  ../SourceX/controls/devices/joystick.cpp
   ../SourceX/controls/devices/kbcontroller.cpp
   ../SourceX/controls/controller.cpp
   ../SourceX/controls/controller_motion.cpp
@@ -180,6 +180,31 @@ add_library(devilutionx STATIC
 
 # Linking and dependencies
 
-# target_link_libraries(${APP_NAME} 
-#   ${PROJECT_SOURCE_DIR}/framework/lib/libtorch.a
-# )
+find_package(Threads REQUIRED)
+
+target_include_directories(devilution PUBLIC
+  ../Source
+  ../SourceS 
+  ..)
+
+target_include_directories(devilution PRIVATE 
+  SDL/SDL/include
+  SDL/SDL2_mixer 
+  SDL/SDL2_ttf)
+
+target_include_directories(devilutionx PRIVATE
+  ../SourceX
+  ../3rdParty/asio/include
+  ../3rdParty/Radon/Radon/include
+  ../3rdParty/libsmacker
+  SDL/SDL/include
+  SDL/SDL2_mixer 
+  SDL/SDL2_ttf)
+
+target_link_libraries(devilution PUBLIC Threads::Threads)
+target_link_libraries(devilutionx PRIVATE
+  devilution
+  PKWare
+  StormLib
+  smacker
+  Radon)
