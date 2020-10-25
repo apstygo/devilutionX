@@ -1,11 +1,5 @@
 cmake_minimum_required(VERSION 3.18)
 
-# Guard against incorrect use of file
-
-if(NOT IOS)
-    message(FATAL_ERROR "⚠️ This CMakeLists is only intended for iOS project generation")
-endif()
-
 # Setup basic project settings
 
 set(DEVELOPMENT_PROJECT_NAME "DevilutionX_iOS")             # <== Set to your project name, e.g. project.xcodeproj
