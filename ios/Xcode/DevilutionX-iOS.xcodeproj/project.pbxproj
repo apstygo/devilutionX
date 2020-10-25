@@ -31,6 +31,9 @@
 		2ECD647E2545EC07003572E3 /* libRadon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD63872545CF2E003572E3 /* libRadon.a */; };
 		2ECD647F2545EC07003572E3 /* libsmacker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD638F2545CF2E003572E3 /* libsmacker.a */; };
 		2ECD64802545EC07003572E3 /* libStormLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD63892545CF2E003572E3 /* libStormLib.a */; };
+		2ECD64AF2545EF49003572E3 /* CharisSILB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2ECD64AE2545EF49003572E3 /* CharisSILB.ttf */; };
+		2ECD64B22545EFEA003572E3 /* diabdat.mpq in Resources */ = {isa = PBXBuildFile; fileRef = 2ECD64B12545EFEA003572E3 /* diabdat.mpq */; };
+		2ECD64B52545F165003572E3 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ECD64B42545F165003572E3 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +154,9 @@
 		2ECD645C2545E9D4003572E3 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		2ECD645E2545E9DA003572E3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2ECD64602545E9E1003572E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2ECD64AE2545EF49003572E3 /* CharisSILB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = CharisSILB.ttf; path = ../../../../Packaging/resources/CharisSILB.ttf; sourceTree = "<group>"; };
+		2ECD64B12545EFEA003572E3 /* diabdat.mpq */ = {isa = PBXFileReference; lastKnownFileType = file; name = diabdat.mpq; path = ../../../diabdat.mpq; sourceTree = "<group>"; };
+		2ECD64B42545F165003572E3 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../../../Packaging/resources/icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +231,9 @@
 		2ECD625B2545BAB4003572E3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2ECD64B42545F165003572E3 /* icon.png */,
+				2ECD64B12545EFEA003572E3 /* diabdat.mpq */,
+				2ECD64AE2545EF49003572E3 /* CharisSILB.ttf */,
 				2ECD624C2545BA59003572E3 /* Assets.xcassets */,
 				2ECD62492545BA56003572E3 /* Main.storyboard */,
 				2ECD624E2545BA59003572E3 /* LaunchScreen.storyboard */,
@@ -461,8 +470,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ECD64B22545EFEA003572E3 /* diabdat.mpq in Resources */,
 				2ECD62502545BA59003572E3 /* LaunchScreen.storyboard in Resources */,
+				2ECD64B52545F165003572E3 /* icon.png in Resources */,
 				2ECD624D2545BA59003572E3 /* Assets.xcassets in Resources */,
+				2ECD64AF2545EF49003572E3 /* CharisSILB.ttf in Resources */,
 				2ECD624B2545BA56003572E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
