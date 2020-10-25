@@ -11,7 +11,6 @@
 		2ECD624B2545BA56003572E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ECD62492545BA56003572E3 /* Main.storyboard */; };
 		2ECD624D2545BA59003572E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ECD624C2545BA59003572E3 /* Assets.xcassets */; };
 		2ECD62502545BA59003572E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ECD624E2545BA59003572E3 /* LaunchScreen.storyboard */; };
-		2ECD62532545BA59003572E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECD62522545BA59003572E3 /* main.m */; };
 		2ECD63CD2545CF61003572E3 /* libdevilutionx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD638D2545CF2E003572E3 /* libdevilutionx.a */; };
 		2ECD63CF2545CF6B003572E3 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD63A22545CF45003572E3 /* libSDL2.a */; };
 		2ECD63D02545CF6B003572E3 /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD63B32545CF4D003572E3 /* libSDL2_mixer.a */; };
@@ -139,7 +138,6 @@
 		2ECD624C2545BA59003572E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2ECD624F2545BA59003572E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2ECD62512545BA59003572E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2ECD62522545BA59003572E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2ECD63792545CF2E003572E3 /* DevilutionX-Dependencies.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "DevilutionX-Dependencies.xcodeproj"; path = "../Dependencies/DevilutionX-Dependencies.xcodeproj"; sourceTree = "<group>"; };
 		2ECD63992545CF45003572E3 /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = "../SDL/SDL/Xcode-iOS/SDL/SDL.xcodeproj"; sourceTree = "<group>"; };
 		2ECD63AB2545CF4D003572E3 /* SDL_mixer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_mixer.xcodeproj; path = "../SDL/SDL2_mixer/Xcode-iOS/SDL_mixer.xcodeproj"; sourceTree = "<group>"; };
@@ -223,7 +221,6 @@
 				2ECD642D2545D627003572E3 /* AppDelegate.mm */,
 				2ECD62462545BA56003572E3 /* ViewController.h */,
 				2ECD62472545BA56003572E3 /* ViewController.m */,
-				2ECD62522545BA59003572E3 /* main.m */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -487,7 +484,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ECD62482545BA56003572E3 /* ViewController.m in Sources */,
-				2ECD62532545BA59003572E3 /* main.m in Sources */,
 				2ECD642E2545D627003572E3 /* AppDelegate.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

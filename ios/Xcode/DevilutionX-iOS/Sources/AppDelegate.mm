@@ -1,17 +1,7 @@
 #import "AppDelegate.h"
 
-//#include "diablo.h"
-//#include <cstring>
-
 @interface AppDelegate ()
 
-@end
-
-@implementation SDLUIKitDelegate (extra)
-
-+ (NSString *)getAppDelegateClassName {
-    return @"AppDelegate";
-}
 @end
 
 @implementation AppDelegate
@@ -34,11 +24,7 @@
 
     // Override point for customization after application launch.
 
-    NSString *path = [NSBundle.mainBundle URLForResource:@"diabdat" withExtension:@"mpq"].URLByDeletingLastPathComponent.path;
-//    strncpy(dvl::diabdat_mpq_path, path.UTF8String, path.length);
-
     return YES;
 }
-
 
 @end
