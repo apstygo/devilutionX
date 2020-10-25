@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2ECD62422545BA56003572E3 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2ECD62412545BA56003572E3 /* AppDelegate.mm */; };
 		2ECD62482545BA56003572E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECD62472545BA56003572E3 /* ViewController.m */; };
 		2ECD624B2545BA56003572E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ECD62492545BA56003572E3 /* Main.storyboard */; };
 		2ECD624D2545BA59003572E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ECD624C2545BA59003572E3 /* Assets.xcassets */; };
@@ -17,6 +16,7 @@
 		2ECD63CF2545CF6B003572E3 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD63A22545CF45003572E3 /* libSDL2.a */; };
 		2ECD63D02545CF6B003572E3 /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD63B32545CF4D003572E3 /* libSDL2_mixer.a */; };
 		2ECD63D12545CF6B003572E3 /* libSDL2_ttf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD63C32545CF52003572E3 /* libSDL2_ttf.a */; };
+		2ECD642E2545D627003572E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECD642D2545D627003572E3 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,7 +116,6 @@
 /* Begin PBXFileReference section */
 		2ECD623D2545BA56003572E3 /* DevilutionX-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DevilutionX-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ECD62402545BA56003572E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2ECD62412545BA56003572E3 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		2ECD62462545BA56003572E3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2ECD62472545BA56003572E3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2ECD624A2545BA56003572E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -128,6 +127,7 @@
 		2ECD63992545CF45003572E3 /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = "../SDL/SDL/Xcode-iOS/SDL/SDL.xcodeproj"; sourceTree = "<group>"; };
 		2ECD63AB2545CF4D003572E3 /* SDL_mixer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_mixer.xcodeproj; path = "../SDL/SDL2_mixer/Xcode-iOS/SDL_mixer.xcodeproj"; sourceTree = "<group>"; };
 		2ECD63BB2545CF52003572E3 /* SDL_ttf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_ttf.xcodeproj; path = "../SDL/SDL2_ttf/Xcode-iOS/SDL_ttf.xcodeproj"; sourceTree = "<group>"; };
+		2ECD642D2545D627003572E3 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,7 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				2ECD62402545BA56003572E3 /* AppDelegate.h */,
-				2ECD62412545BA56003572E3 /* AppDelegate.mm */,
+				2ECD642D2545D627003572E3 /* AppDelegate.m */,
 				2ECD62462545BA56003572E3 /* ViewController.h */,
 				2ECD62472545BA56003572E3 /* ViewController.m */,
 				2ECD62522545BA59003572E3 /* main.m */,
@@ -421,8 +421,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ECD62482545BA56003572E3 /* ViewController.m in Sources */,
-				2ECD62422545BA56003572E3 /* AppDelegate.mm in Sources */,
 				2ECD62532545BA59003572E3 /* main.m in Sources */,
+				2ECD642E2545D627003572E3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
