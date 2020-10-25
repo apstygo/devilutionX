@@ -17,6 +17,7 @@
 		2ECD62922545BB63003572E3 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD62662545BB08003572E3 /* libSDL2.a */; };
 		2ECD62932545BB63003572E3 /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD62772545BB14003572E3 /* libSDL2_mixer.a */; };
 		2ECD62942545BB63003572E3 /* libSDL2_ttf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD62892545BB20003572E3 /* libSDL2_ttf.a */; };
+		2ECD62B62545BCCE003572E3 /* libdevilutionx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD62AA2545BC9B003572E3 /* libdevilutionx.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,48 @@
 			remoteGlobalIDString = AA53152E1FE1016F0025C9BE;
 			remoteInfo = "libSDL_ttf-tvOS";
 		};
+		2ECD62A12545BC9B003572E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2ECD62962545BC9A003572E3 /* DevilutionX-Dependencies.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 381C781B45B44FFC8525477C;
+			remoteInfo = PKWare;
+		};
+		2ECD62A32545BC9B003572E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2ECD62962545BC9A003572E3 /* DevilutionX-Dependencies.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D8A6AF1465C423CA2F3B58C;
+			remoteInfo = Radon;
+		};
+		2ECD62A52545BC9B003572E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2ECD62962545BC9A003572E3 /* DevilutionX-Dependencies.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4D38CF8475CD44B39932F826;
+			remoteInfo = StormLib;
+		};
+		2ECD62A72545BC9B003572E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2ECD62962545BC9A003572E3 /* DevilutionX-Dependencies.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8845A919BC3F44EA957D9A0C;
+			remoteInfo = devilution;
+		};
+		2ECD62A92545BC9B003572E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2ECD62962545BC9A003572E3 /* DevilutionX-Dependencies.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A195DB049D24B10B9880888;
+			remoteInfo = devilutionx;
+		};
+		2ECD62AB2545BC9B003572E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2ECD62962545BC9A003572E3 /* DevilutionX-Dependencies.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CE7D9B0514874309BFEA2F57;
+			remoteInfo = smacker;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +123,7 @@
 		2ECD625D2545BB08003572E3 /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = "../../SDL/SDL/Xcode-iOS/SDL/SDL.xcodeproj"; sourceTree = "<group>"; };
 		2ECD626F2545BB14003572E3 /* SDL_mixer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_mixer.xcodeproj; path = "../../SDL/SDL2_mixer/Xcode-iOS/SDL_mixer.xcodeproj"; sourceTree = "<group>"; };
 		2ECD62812545BB20003572E3 /* SDL_ttf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_ttf.xcodeproj; path = "../../SDL/SDL2_ttf/Xcode-iOS/SDL_ttf.xcodeproj"; sourceTree = "<group>"; };
+		2ECD62962545BC9A003572E3 /* DevilutionX-Dependencies.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "DevilutionX-Dependencies.xcodeproj"; path = "../../Dependencies/DevilutionX-Dependencies.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ECD62932545BB63003572E3 /* libSDL2_mixer.a in Frameworks */,
+				2ECD62B62545BCCE003572E3 /* libdevilutionx.a in Frameworks */,
 				2ECD62922545BB63003572E3 /* libSDL2.a in Frameworks */,
 				2ECD62942545BB63003572E3 /* libSDL2_ttf.a in Frameworks */,
 			);
@@ -150,6 +195,7 @@
 		2ECD625C2545BAD7003572E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2ECD62962545BC9A003572E3 /* DevilutionX-Dependencies.xcodeproj */,
 				2ECD625D2545BB08003572E3 /* SDL.xcodeproj */,
 				2ECD626F2545BB14003572E3 /* SDL_mixer.xcodeproj */,
 				2ECD62812545BB20003572E3 /* SDL_ttf.xcodeproj */,
@@ -180,6 +226,19 @@
 			children = (
 				2ECD62892545BB20003572E3 /* libSDL2_ttf.a */,
 				2ECD628B2545BB20003572E3 /* libSDL2_ttf.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2ECD62972545BC9A003572E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2ECD62A22545BC9B003572E3 /* libPKWare.a */,
+				2ECD62A42545BC9B003572E3 /* libRadon.a */,
+				2ECD62A62545BC9B003572E3 /* libStormLib.a */,
+				2ECD62A82545BC9B003572E3 /* libdevilution.a */,
+				2ECD62AA2545BC9B003572E3 /* libdevilutionx.a */,
+				2ECD62AC2545BC9B003572E3 /* libsmacker.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -229,6 +288,10 @@
 			productRefGroup = 2ECD623E2545BA56003572E3 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = 2ECD62972545BC9A003572E3 /* Products */;
+					ProjectRef = 2ECD62962545BC9A003572E3 /* DevilutionX-Dependencies.xcodeproj */;
+				},
 				{
 					ProductGroup = 2ECD625E2545BB08003572E3 /* Products */;
 					ProjectRef = 2ECD625D2545BB08003572E3 /* SDL.xcodeproj */;
@@ -290,6 +353,48 @@
 			fileType = archive.ar;
 			path = libSDL2_ttf.a;
 			remoteRef = 2ECD628A2545BB20003572E3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2ECD62A22545BC9B003572E3 /* libPKWare.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPKWare.a;
+			remoteRef = 2ECD62A12545BC9B003572E3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2ECD62A42545BC9B003572E3 /* libRadon.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRadon.a;
+			remoteRef = 2ECD62A32545BC9B003572E3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2ECD62A62545BC9B003572E3 /* libStormLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libStormLib.a;
+			remoteRef = 2ECD62A52545BC9B003572E3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2ECD62A82545BC9B003572E3 /* libdevilution.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libdevilution.a;
+			remoteRef = 2ECD62A72545BC9B003572E3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2ECD62AA2545BC9B003572E3 /* libdevilutionx.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libdevilutionx.a;
+			remoteRef = 2ECD62A92545BC9B003572E3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2ECD62AC2545BC9B003572E3 /* libsmacker.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsmacker.a;
+			remoteRef = 2ECD62AB2545BC9B003572E3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
