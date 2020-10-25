@@ -7,109 +7,108 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2ECD62422545BA56003572E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECD62412545BA56003572E3 /* AppDelegate.m */; };
-		2ECD62452545BA56003572E3 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECD62442545BA56003572E3 /* SceneDelegate.m */; };
+		2ECD62422545BA56003572E3 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2ECD62412545BA56003572E3 /* AppDelegate.mm */; };
 		2ECD62482545BA56003572E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECD62472545BA56003572E3 /* ViewController.m */; };
 		2ECD624B2545BA56003572E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ECD62492545BA56003572E3 /* Main.storyboard */; };
 		2ECD624D2545BA59003572E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ECD624C2545BA59003572E3 /* Assets.xcassets */; };
 		2ECD62502545BA59003572E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ECD624E2545BA59003572E3 /* LaunchScreen.storyboard */; };
 		2ECD62532545BA59003572E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECD62522545BA59003572E3 /* main.m */; };
-		2ECD62922545BB63003572E3 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD62662545BB08003572E3 /* libSDL2.a */; };
-		2ECD62932545BB63003572E3 /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD62772545BB14003572E3 /* libSDL2_mixer.a */; };
-		2ECD62942545BB63003572E3 /* libSDL2_ttf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD62892545BB20003572E3 /* libSDL2_ttf.a */; };
-		2ECD62B62545BCCE003572E3 /* libdevilutionx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD62AA2545BC9B003572E3 /* libdevilutionx.a */; };
+		2ECD63CD2545CF61003572E3 /* libdevilutionx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD638D2545CF2E003572E3 /* libdevilutionx.a */; };
+		2ECD63CF2545CF6B003572E3 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD63A22545CF45003572E3 /* libSDL2.a */; };
+		2ECD63D02545CF6B003572E3 /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD63B32545CF4D003572E3 /* libSDL2_mixer.a */; };
+		2ECD63D12545CF6B003572E3 /* libSDL2_ttf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD63C32545CF52003572E3 /* libSDL2_ttf.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2ECD62652545BB08003572E3 /* PBXContainerItemProxy */ = {
+		2ECD63842545CF2E003572E3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2ECD625D2545BB08003572E3 /* SDL.xcodeproj */;
+			containerPortal = 2ECD63792545CF2E003572E3 /* DevilutionX-Dependencies.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7F4447532DF44FA494B5A0A0;
+			remoteInfo = PKWare;
+		};
+		2ECD63862545CF2E003572E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2ECD63792545CF2E003572E3 /* DevilutionX-Dependencies.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96AE90691F6143C2A6D3FD8A;
+			remoteInfo = Radon;
+		};
+		2ECD63882545CF2E003572E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2ECD63792545CF2E003572E3 /* DevilutionX-Dependencies.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9E69ECCD0B2143359919FA9D;
+			remoteInfo = StormLib;
+		};
+		2ECD638A2545CF2E003572E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2ECD63792545CF2E003572E3 /* DevilutionX-Dependencies.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F1C500706C3646799265A789;
+			remoteInfo = devilution;
+		};
+		2ECD638C2545CF2E003572E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2ECD63792545CF2E003572E3 /* DevilutionX-Dependencies.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C9C2CA836B44D5D98580417;
+			remoteInfo = devilutionx;
+		};
+		2ECD638E2545CF2E003572E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2ECD63792545CF2E003572E3 /* DevilutionX-Dependencies.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 75E58757203C4AB8B80CB921;
+			remoteInfo = smacker;
+		};
+		2ECD63A12545CF45003572E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2ECD63992545CF45003572E3 /* SDL.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = FD6526630DE8FCCB002AD96B;
 			remoteInfo = "libSDL-iOS";
 		};
-		2ECD62672545BB08003572E3 /* PBXContainerItemProxy */ = {
+		2ECD63A32545CF45003572E3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2ECD625D2545BB08003572E3 /* SDL.xcodeproj */;
+			containerPortal = 2ECD63992545CF45003572E3 /* SDL.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = FAB598141BB5C1B100BE72C5;
 			remoteInfo = "libSDL-tvOS";
 		};
-		2ECD62762545BB14003572E3 /* PBXContainerItemProxy */ = {
+		2ECD63B22545CF4D003572E3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2ECD626F2545BB14003572E3 /* SDL_mixer.xcodeproj */;
+			containerPortal = 2ECD63AB2545CF4D003572E3 /* SDL_mixer.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = BE1FA95407AF96B2004B6283;
 			remoteInfo = "libSDL_mixer-iOS";
 		};
-		2ECD62782545BB14003572E3 /* PBXContainerItemProxy */ = {
+		2ECD63B42545CF4D003572E3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2ECD626F2545BB14003572E3 /* SDL_mixer.xcodeproj */;
+			containerPortal = 2ECD63AB2545CF4D003572E3 /* SDL_mixer.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = AA5314F11FE0FE2E0025C9BE;
 			remoteInfo = "libSDL_mixer-tvOS";
 		};
-		2ECD62882545BB20003572E3 /* PBXContainerItemProxy */ = {
+		2ECD63C22545CF52003572E3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2ECD62812545BB20003572E3 /* SDL_ttf.xcodeproj */;
+			containerPortal = 2ECD63BB2545CF52003572E3 /* SDL_ttf.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = BE48FD6E07AFA17000BB41DA;
 			remoteInfo = "libSDL_ttf-iOS";
 		};
-		2ECD628A2545BB20003572E3 /* PBXContainerItemProxy */ = {
+		2ECD63C42545CF52003572E3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2ECD62812545BB20003572E3 /* SDL_ttf.xcodeproj */;
+			containerPortal = 2ECD63BB2545CF52003572E3 /* SDL_ttf.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = AA53152E1FE1016F0025C9BE;
 			remoteInfo = "libSDL_ttf-tvOS";
 		};
-		2ECD62A12545BC9B003572E3 /* PBXContainerItemProxy */ = {
+		2ECD63D22545CF75003572E3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2ECD62962545BC9A003572E3 /* DevilutionX-Dependencies.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 381C781B45B44FFC8525477C;
-			remoteInfo = PKWare;
-		};
-		2ECD62A32545BC9B003572E3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2ECD62962545BC9A003572E3 /* DevilutionX-Dependencies.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3D8A6AF1465C423CA2F3B58C;
-			remoteInfo = Radon;
-		};
-		2ECD62A52545BC9B003572E3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2ECD62962545BC9A003572E3 /* DevilutionX-Dependencies.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4D38CF8475CD44B39932F826;
-			remoteInfo = StormLib;
-		};
-		2ECD62A72545BC9B003572E3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2ECD62962545BC9A003572E3 /* DevilutionX-Dependencies.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8845A919BC3F44EA957D9A0C;
-			remoteInfo = devilution;
-		};
-		2ECD62A92545BC9B003572E3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2ECD62962545BC9A003572E3 /* DevilutionX-Dependencies.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4A195DB049D24B10B9880888;
-			remoteInfo = devilutionx;
-		};
-		2ECD62AB2545BC9B003572E3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2ECD62962545BC9A003572E3 /* DevilutionX-Dependencies.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = CE7D9B0514874309BFEA2F57;
-			remoteInfo = smacker;
-		};
-		2ECD62F52545C306003572E3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2ECD62962545BC9A003572E3 /* DevilutionX-Dependencies.xcodeproj */;
+			containerPortal = 2ECD63792545CF2E003572E3 /* DevilutionX-Dependencies.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 34D0B87450F44510851A49F8;
+			remoteGlobalIDString = 997609E517F54F369FDE14DE;
 			remoteInfo = devilutionx;
 		};
 /* End PBXContainerItemProxy section */
@@ -117,9 +116,7 @@
 /* Begin PBXFileReference section */
 		2ECD623D2545BA56003572E3 /* DevilutionX-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DevilutionX-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ECD62402545BA56003572E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2ECD62412545BA56003572E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2ECD62432545BA56003572E3 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		2ECD62442545BA56003572E3 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		2ECD62412545BA56003572E3 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		2ECD62462545BA56003572E3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2ECD62472545BA56003572E3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2ECD624A2545BA56003572E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -127,10 +124,10 @@
 		2ECD624F2545BA59003572E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2ECD62512545BA59003572E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2ECD62522545BA59003572E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2ECD625D2545BB08003572E3 /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = "../../SDL/SDL/Xcode-iOS/SDL/SDL.xcodeproj"; sourceTree = "<group>"; };
-		2ECD626F2545BB14003572E3 /* SDL_mixer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_mixer.xcodeproj; path = "../../SDL/SDL2_mixer/Xcode-iOS/SDL_mixer.xcodeproj"; sourceTree = "<group>"; };
-		2ECD62812545BB20003572E3 /* SDL_ttf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_ttf.xcodeproj; path = "../../SDL/SDL2_ttf/Xcode-iOS/SDL_ttf.xcodeproj"; sourceTree = "<group>"; };
-		2ECD62962545BC9A003572E3 /* DevilutionX-Dependencies.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "DevilutionX-Dependencies.xcodeproj"; path = "../../Dependencies/DevilutionX-Dependencies.xcodeproj"; sourceTree = "<group>"; };
+		2ECD63792545CF2E003572E3 /* DevilutionX-Dependencies.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "DevilutionX-Dependencies.xcodeproj"; path = "../Dependencies/DevilutionX-Dependencies.xcodeproj"; sourceTree = "<group>"; };
+		2ECD63992545CF45003572E3 /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = "../SDL/SDL/Xcode-iOS/SDL/SDL.xcodeproj"; sourceTree = "<group>"; };
+		2ECD63AB2545CF4D003572E3 /* SDL_mixer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_mixer.xcodeproj; path = "../SDL/SDL2_mixer/Xcode-iOS/SDL_mixer.xcodeproj"; sourceTree = "<group>"; };
+		2ECD63BB2545CF52003572E3 /* SDL_ttf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_ttf.xcodeproj; path = "../SDL/SDL2_ttf/Xcode-iOS/SDL_ttf.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,10 +135,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2ECD62932545BB63003572E3 /* libSDL2_mixer.a in Frameworks */,
-				2ECD62B62545BCCE003572E3 /* libdevilutionx.a in Frameworks */,
-				2ECD62922545BB63003572E3 /* libSDL2.a in Frameworks */,
-				2ECD62942545BB63003572E3 /* libSDL2_ttf.a in Frameworks */,
+				2ECD63D02545CF6B003572E3 /* libSDL2_mixer.a in Frameworks */,
+				2ECD63D12545CF6B003572E3 /* libSDL2_ttf.a in Frameworks */,
+				2ECD63CF2545CF6B003572E3 /* libSDL2.a in Frameworks */,
+				2ECD63CD2545CF61003572E3 /* libdevilutionx.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,9 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				2ECD62402545BA56003572E3 /* AppDelegate.h */,
-				2ECD62412545BA56003572E3 /* AppDelegate.m */,
-				2ECD62432545BA56003572E3 /* SceneDelegate.h */,
-				2ECD62442545BA56003572E3 /* SceneDelegate.m */,
+				2ECD62412545BA56003572E3 /* AppDelegate.mm */,
 				2ECD62462545BA56003572E3 /* ViewController.h */,
 				2ECD62472545BA56003572E3 /* ViewController.m */,
 				2ECD62522545BA59003572E3 /* main.m */,
@@ -202,50 +197,50 @@
 		2ECD625C2545BAD7003572E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2ECD62962545BC9A003572E3 /* DevilutionX-Dependencies.xcodeproj */,
-				2ECD625D2545BB08003572E3 /* SDL.xcodeproj */,
-				2ECD626F2545BB14003572E3 /* SDL_mixer.xcodeproj */,
-				2ECD62812545BB20003572E3 /* SDL_ttf.xcodeproj */,
+				2ECD63792545CF2E003572E3 /* DevilutionX-Dependencies.xcodeproj */,
+				2ECD63992545CF45003572E3 /* SDL.xcodeproj */,
+				2ECD63AB2545CF4D003572E3 /* SDL_mixer.xcodeproj */,
+				2ECD63BB2545CF52003572E3 /* SDL_ttf.xcodeproj */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2ECD625E2545BB08003572E3 /* Products */ = {
+		2ECD637A2545CF2E003572E3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2ECD62662545BB08003572E3 /* libSDL2.a */,
-				2ECD62682545BB08003572E3 /* libSDL2.a */,
+				2ECD63852545CF2E003572E3 /* libPKWare.a */,
+				2ECD63872545CF2E003572E3 /* libRadon.a */,
+				2ECD63892545CF2E003572E3 /* libStormLib.a */,
+				2ECD638B2545CF2E003572E3 /* libdevilution.a */,
+				2ECD638D2545CF2E003572E3 /* libdevilutionx.a */,
+				2ECD638F2545CF2E003572E3 /* libsmacker.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2ECD62702545BB14003572E3 /* Products */ = {
+		2ECD639A2545CF45003572E3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2ECD62772545BB14003572E3 /* libSDL2_mixer.a */,
-				2ECD62792545BB14003572E3 /* libSDL2_mixer.a */,
+				2ECD63A22545CF45003572E3 /* libSDL2.a */,
+				2ECD63A42545CF45003572E3 /* libSDL2.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2ECD62822545BB20003572E3 /* Products */ = {
+		2ECD63AC2545CF4D003572E3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2ECD62892545BB20003572E3 /* libSDL2_ttf.a */,
-				2ECD628B2545BB20003572E3 /* libSDL2_ttf.a */,
+				2ECD63B32545CF4D003572E3 /* libSDL2_mixer.a */,
+				2ECD63B52545CF4D003572E3 /* libSDL2_mixer.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2ECD62972545BC9A003572E3 /* Products */ = {
+		2ECD63BC2545CF52003572E3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2ECD62A22545BC9B003572E3 /* libPKWare.a */,
-				2ECD62A42545BC9B003572E3 /* libRadon.a */,
-				2ECD62A62545BC9B003572E3 /* libStormLib.a */,
-				2ECD62A82545BC9B003572E3 /* libdevilution.a */,
-				2ECD62AA2545BC9B003572E3 /* libdevilutionx.a */,
-				2ECD62AC2545BC9B003572E3 /* libsmacker.a */,
+				2ECD63C32545CF52003572E3 /* libSDL2_ttf.a */,
+				2ECD63C52545CF52003572E3 /* libSDL2_ttf.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -264,7 +259,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				2ECD62F62545C306003572E3 /* PBXTargetDependency */,
+				2ECD63D32545CF75003572E3 /* PBXTargetDependency */,
 			);
 			name = "DevilutionX-iOS";
 			productName = "DevilutionX-iOS";
@@ -297,20 +292,20 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 2ECD62972545BC9A003572E3 /* Products */;
-					ProjectRef = 2ECD62962545BC9A003572E3 /* DevilutionX-Dependencies.xcodeproj */;
+					ProductGroup = 2ECD637A2545CF2E003572E3 /* Products */;
+					ProjectRef = 2ECD63792545CF2E003572E3 /* DevilutionX-Dependencies.xcodeproj */;
 				},
 				{
-					ProductGroup = 2ECD625E2545BB08003572E3 /* Products */;
-					ProjectRef = 2ECD625D2545BB08003572E3 /* SDL.xcodeproj */;
+					ProductGroup = 2ECD639A2545CF45003572E3 /* Products */;
+					ProjectRef = 2ECD63992545CF45003572E3 /* SDL.xcodeproj */;
 				},
 				{
-					ProductGroup = 2ECD62702545BB14003572E3 /* Products */;
-					ProjectRef = 2ECD626F2545BB14003572E3 /* SDL_mixer.xcodeproj */;
+					ProductGroup = 2ECD63AC2545CF4D003572E3 /* Products */;
+					ProjectRef = 2ECD63AB2545CF4D003572E3 /* SDL_mixer.xcodeproj */;
 				},
 				{
-					ProductGroup = 2ECD62822545BB20003572E3 /* Products */;
-					ProjectRef = 2ECD62812545BB20003572E3 /* SDL_ttf.xcodeproj */;
+					ProductGroup = 2ECD63BC2545CF52003572E3 /* Products */;
+					ProjectRef = 2ECD63BB2545CF52003572E3 /* SDL_ttf.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -321,88 +316,88 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		2ECD62662545BB08003572E3 /* libSDL2.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSDL2.a;
-			remoteRef = 2ECD62652545BB08003572E3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2ECD62682545BB08003572E3 /* libSDL2.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSDL2.a;
-			remoteRef = 2ECD62672545BB08003572E3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2ECD62772545BB14003572E3 /* libSDL2_mixer.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSDL2_mixer.a;
-			remoteRef = 2ECD62762545BB14003572E3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2ECD62792545BB14003572E3 /* libSDL2_mixer.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSDL2_mixer.a;
-			remoteRef = 2ECD62782545BB14003572E3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2ECD62892545BB20003572E3 /* libSDL2_ttf.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSDL2_ttf.a;
-			remoteRef = 2ECD62882545BB20003572E3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2ECD628B2545BB20003572E3 /* libSDL2_ttf.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSDL2_ttf.a;
-			remoteRef = 2ECD628A2545BB20003572E3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2ECD62A22545BC9B003572E3 /* libPKWare.a */ = {
+		2ECD63852545CF2E003572E3 /* libPKWare.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libPKWare.a;
-			remoteRef = 2ECD62A12545BC9B003572E3 /* PBXContainerItemProxy */;
+			remoteRef = 2ECD63842545CF2E003572E3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2ECD62A42545BC9B003572E3 /* libRadon.a */ = {
+		2ECD63872545CF2E003572E3 /* libRadon.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libRadon.a;
-			remoteRef = 2ECD62A32545BC9B003572E3 /* PBXContainerItemProxy */;
+			remoteRef = 2ECD63862545CF2E003572E3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2ECD62A62545BC9B003572E3 /* libStormLib.a */ = {
+		2ECD63892545CF2E003572E3 /* libStormLib.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libStormLib.a;
-			remoteRef = 2ECD62A52545BC9B003572E3 /* PBXContainerItemProxy */;
+			remoteRef = 2ECD63882545CF2E003572E3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2ECD62A82545BC9B003572E3 /* libdevilution.a */ = {
+		2ECD638B2545CF2E003572E3 /* libdevilution.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libdevilution.a;
-			remoteRef = 2ECD62A72545BC9B003572E3 /* PBXContainerItemProxy */;
+			remoteRef = 2ECD638A2545CF2E003572E3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2ECD62AA2545BC9B003572E3 /* libdevilutionx.a */ = {
+		2ECD638D2545CF2E003572E3 /* libdevilutionx.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libdevilutionx.a;
-			remoteRef = 2ECD62A92545BC9B003572E3 /* PBXContainerItemProxy */;
+			remoteRef = 2ECD638C2545CF2E003572E3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2ECD62AC2545BC9B003572E3 /* libsmacker.a */ = {
+		2ECD638F2545CF2E003572E3 /* libsmacker.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libsmacker.a;
-			remoteRef = 2ECD62AB2545BC9B003572E3 /* PBXContainerItemProxy */;
+			remoteRef = 2ECD638E2545CF2E003572E3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2ECD63A22545CF45003572E3 /* libSDL2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDL2.a;
+			remoteRef = 2ECD63A12545CF45003572E3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2ECD63A42545CF45003572E3 /* libSDL2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDL2.a;
+			remoteRef = 2ECD63A32545CF45003572E3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2ECD63B32545CF4D003572E3 /* libSDL2_mixer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDL2_mixer.a;
+			remoteRef = 2ECD63B22545CF4D003572E3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2ECD63B52545CF4D003572E3 /* libSDL2_mixer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDL2_mixer.a;
+			remoteRef = 2ECD63B42545CF4D003572E3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2ECD63C32545CF52003572E3 /* libSDL2_ttf.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDL2_ttf.a;
+			remoteRef = 2ECD63C22545CF52003572E3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2ECD63C52545CF52003572E3 /* libSDL2_ttf.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDL2_ttf.a;
+			remoteRef = 2ECD63C42545CF52003572E3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -426,19 +421,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ECD62482545BA56003572E3 /* ViewController.m in Sources */,
-				2ECD62422545BA56003572E3 /* AppDelegate.m in Sources */,
+				2ECD62422545BA56003572E3 /* AppDelegate.mm in Sources */,
 				2ECD62532545BA59003572E3 /* main.m in Sources */,
-				2ECD62452545BA56003572E3 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2ECD62F62545C306003572E3 /* PBXTargetDependency */ = {
+		2ECD63D32545CF75003572E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = devilutionx;
-			targetProxy = 2ECD62F52545C306003572E3 /* PBXContainerItemProxy */;
+			targetProxy = 2ECD63D22545CF75003572E3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -588,6 +582,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.diasurgical.DevilutionX-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = ../../Source;
 			};
 			name = Debug;
 		};
@@ -605,6 +600,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.diasurgical.DevilutionX-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = ../../Source;
 			};
 			name = Release;
 		};
