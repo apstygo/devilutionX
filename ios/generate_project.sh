@@ -1,3 +1,5 @@
+rm -rf Xcode
+
 cmake . \
     -G Xcode \
     -B Xcode \
