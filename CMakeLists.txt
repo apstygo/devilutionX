@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 3.10) # CMP0083 NEW
 
+if (${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
+    set(MACOSX TRUE)
+endif()
+
 include(CMake/out_of_tree.cmake)
 include(CMake/genex.cmake)
 
@@ -301,9 +305,13 @@ set(devilutionx_SRCS
   SourceX/DiabloUI/ttf_render_wrapped.cpp
   SourceX/main.cpp
   SourceX/devilutionx.exe.manifest
-  Packaging/macOS/AppIcon.icns
   Packaging/resources/CharisSILB.ttf
   Packaging/windows/devilutionx.rc)
+
+set(devilutionx_ios_SRCS
+  Packaging/iOS/Sources/AppDelegate.h
+  Packaging/iOS/Sources/AppDelegate.m
+)
 
 if(NOT NONET)
   list(APPEND devilutionx_SRCS
@@ -313,6 +321,11 @@ if(NOT NONET)
 endif()
 
 set(BIN_TARGET devilutionx)
+
+if(MACOSX)
+  list(APPEND devilutionx_SRCS
+    Packaging/macOS/AppIcon.icns)
+endif()
 
 if(SWITCH)
   list(APPEND devilutionx_SRCS
@@ -345,7 +358,17 @@ if(HELLFIRE)
   add_definitions(-DHELLFIRE)
 endif()
 
-add_executable(${BIN_TARGET} WIN32 MACOSX_BUNDLE ${devilutionx_SRCS})
+# When building for iOS, add devilutionx as a static library
+
+if(IOS)
+  set(BIN_TARGET devilutionx_ios)
+  add_library(devilutionx STATIC ${devilutionx_SRCS})
+  set(executable_sources ${devilutionx_ios_SRCS})
+else()
+  set(executable_sources ${devilutionx_SRCS})
+endif()
+
+add_executable(${BIN_TARGET} WIN32 MACOSX_BUNDLE ${executable_sources})
 
 # Copy the font to the build directory to it works from the build directory
 file(COPY "Packaging/resources/CharisSILB.ttf" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}")
