@@ -1,8 +1,6 @@
 #import <UIKit/UIKit.h>
+#import <SDL_uikitappdelegate.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface AppDelegate : SDLUIKitDelegate
 
 @end
-

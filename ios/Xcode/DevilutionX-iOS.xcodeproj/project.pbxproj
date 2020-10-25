@@ -16,7 +16,21 @@
 		2ECD63CF2545CF6B003572E3 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD63A22545CF45003572E3 /* libSDL2.a */; };
 		2ECD63D02545CF6B003572E3 /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD63B32545CF4D003572E3 /* libSDL2_mixer.a */; };
 		2ECD63D12545CF6B003572E3 /* libSDL2_ttf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD63C32545CF52003572E3 /* libSDL2_ttf.a */; };
-		2ECD642E2545D627003572E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECD642D2545D627003572E3 /* AppDelegate.m */; };
+		2ECD642E2545D627003572E3 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2ECD642D2545D627003572E3 /* AppDelegate.mm */; };
+		2ECD64512545E995003572E3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD64502545E994003572E3 /* AudioToolbox.framework */; };
+		2ECD64532545E99D003572E3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD64522545E99D003572E3 /* AVFoundation.framework */; };
+		2ECD64552545E9AF003572E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD64542545E9AF003572E3 /* CoreGraphics.framework */; };
+		2ECD64572545E9B6003572E3 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD64562545E9B6003572E3 /* CoreMotion.framework */; };
+		2ECD64592545E9BF003572E3 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD64582545E9BF003572E3 /* GameController.framework */; };
+		2ECD645B2545E9CE003572E3 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD645A2545E9CE003572E3 /* Metal.framework */; };
+		2ECD645D2545E9D4003572E3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD645C2545E9D4003572E3 /* OpenGLES.framework */; };
+		2ECD645F2545E9DA003572E3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD645E2545E9DA003572E3 /* QuartzCore.framework */; };
+		2ECD64612545E9E1003572E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD64602545E9E1003572E3 /* UIKit.framework */; };
+		2ECD647B2545EBD5003572E3 /* libdevilution.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD638B2545CF2E003572E3 /* libdevilution.a */; };
+		2ECD647D2545EC07003572E3 /* libPKWare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD63852545CF2E003572E3 /* libPKWare.a */; };
+		2ECD647E2545EC07003572E3 /* libRadon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD63872545CF2E003572E3 /* libRadon.a */; };
+		2ECD647F2545EC07003572E3 /* libsmacker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD638F2545CF2E003572E3 /* libsmacker.a */; };
+		2ECD64802545EC07003572E3 /* libStormLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECD63892545CF2E003572E3 /* libStormLib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,7 +141,16 @@
 		2ECD63992545CF45003572E3 /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = "../SDL/SDL/Xcode-iOS/SDL/SDL.xcodeproj"; sourceTree = "<group>"; };
 		2ECD63AB2545CF4D003572E3 /* SDL_mixer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_mixer.xcodeproj; path = "../SDL/SDL2_mixer/Xcode-iOS/SDL_mixer.xcodeproj"; sourceTree = "<group>"; };
 		2ECD63BB2545CF52003572E3 /* SDL_ttf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_ttf.xcodeproj; path = "../SDL/SDL2_ttf/Xcode-iOS/SDL_ttf.xcodeproj"; sourceTree = "<group>"; };
-		2ECD642D2545D627003572E3 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2ECD642D2545D627003572E3 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		2ECD64502545E994003572E3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2ECD64522545E99D003572E3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2ECD64542545E9AF003572E3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2ECD64562545E9B6003572E3 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		2ECD64582545E9BF003572E3 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
+		2ECD645A2545E9CE003572E3 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		2ECD645C2545E9D4003572E3 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		2ECD645E2545E9DA003572E3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2ECD64602545E9E1003572E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,10 +158,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ECD647D2545EC07003572E3 /* libPKWare.a in Frameworks */,
 				2ECD63D02545CF6B003572E3 /* libSDL2_mixer.a in Frameworks */,
 				2ECD63D12545CF6B003572E3 /* libSDL2_ttf.a in Frameworks */,
+				2ECD645B2545E9CE003572E3 /* Metal.framework in Frameworks */,
+				2ECD647E2545EC07003572E3 /* libRadon.a in Frameworks */,
+				2ECD64532545E99D003572E3 /* AVFoundation.framework in Frameworks */,
+				2ECD645D2545E9D4003572E3 /* OpenGLES.framework in Frameworks */,
+				2ECD64552545E9AF003572E3 /* CoreGraphics.framework in Frameworks */,
+				2ECD647B2545EBD5003572E3 /* libdevilution.a in Frameworks */,
+				2ECD64512545E995003572E3 /* AudioToolbox.framework in Frameworks */,
 				2ECD63CF2545CF6B003572E3 /* libSDL2.a in Frameworks */,
+				2ECD64612545E9E1003572E3 /* UIKit.framework in Frameworks */,
+				2ECD645F2545E9DA003572E3 /* QuartzCore.framework in Frameworks */,
 				2ECD63CD2545CF61003572E3 /* libdevilutionx.a in Frameworks */,
+				2ECD64572545E9B6003572E3 /* CoreMotion.framework in Frameworks */,
+				2ECD64802545EC07003572E3 /* libStormLib.a in Frameworks */,
+				2ECD647F2545EC07003572E3 /* libsmacker.a in Frameworks */,
+				2ECD64592545E9BF003572E3 /* GameController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				2ECD623F2545BA56003572E3 /* DevilutionX-iOS */,
+				2ECD64632545EA22003572E3 /* Dependencies */,
 				2ECD625C2545BAD7003572E3 /* Frameworks */,
 				2ECD623E2545BA56003572E3 /* Products */,
 			);
@@ -176,7 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				2ECD62402545BA56003572E3 /* AppDelegate.h */,
-				2ECD642D2545D627003572E3 /* AppDelegate.m */,
+				2ECD642D2545D627003572E3 /* AppDelegate.mm */,
 				2ECD62462545BA56003572E3 /* ViewController.h */,
 				2ECD62472545BA56003572E3 /* ViewController.m */,
 				2ECD62522545BA59003572E3 /* main.m */,
@@ -197,10 +235,15 @@
 		2ECD625C2545BAD7003572E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2ECD63792545CF2E003572E3 /* DevilutionX-Dependencies.xcodeproj */,
-				2ECD63992545CF45003572E3 /* SDL.xcodeproj */,
-				2ECD63AB2545CF4D003572E3 /* SDL_mixer.xcodeproj */,
-				2ECD63BB2545CF52003572E3 /* SDL_ttf.xcodeproj */,
+				2ECD64602545E9E1003572E3 /* UIKit.framework */,
+				2ECD645E2545E9DA003572E3 /* QuartzCore.framework */,
+				2ECD645C2545E9D4003572E3 /* OpenGLES.framework */,
+				2ECD645A2545E9CE003572E3 /* Metal.framework */,
+				2ECD64582545E9BF003572E3 /* GameController.framework */,
+				2ECD64562545E9B6003572E3 /* CoreMotion.framework */,
+				2ECD64542545E9AF003572E3 /* CoreGraphics.framework */,
+				2ECD64522545E99D003572E3 /* AVFoundation.framework */,
+				2ECD64502545E994003572E3 /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -243,6 +286,17 @@
 				2ECD63C52545CF52003572E3 /* libSDL2_ttf.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		2ECD64632545EA22003572E3 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				2ECD63792545CF2E003572E3 /* DevilutionX-Dependencies.xcodeproj */,
+				2ECD63992545CF45003572E3 /* SDL.xcodeproj */,
+				2ECD63AB2545CF4D003572E3 /* SDL_mixer.xcodeproj */,
+				2ECD63BB2545CF52003572E3 /* SDL_ttf.xcodeproj */,
+			);
+			name = Dependencies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,7 +476,7 @@
 			files = (
 				2ECD62482545BA56003572E3 /* ViewController.m in Sources */,
 				2ECD62532545BA59003572E3 /* main.m in Sources */,
-				2ECD642E2545D627003572E3 /* AppDelegate.m in Sources */,
+				2ECD642E2545D627003572E3 /* AppDelegate.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
