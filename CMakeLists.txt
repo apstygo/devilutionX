@@ -1,9 +1,5 @@
 cmake_minimum_required(VERSION 3.10) # CMP0083 NEW
 
-if (${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
-    set(MACOSX TRUE)
-endif()
-
 include(CMake/out_of_tree.cmake)
 include(CMake/genex.cmake)
 
@@ -305,13 +301,9 @@ set(devilutionx_SRCS
   SourceX/DiabloUI/ttf_render_wrapped.cpp
   SourceX/main.cpp
   SourceX/devilutionx.exe.manifest
+  Packaging/macOS/AppIcon.icns
   Packaging/resources/CharisSILB.ttf
   Packaging/windows/devilutionx.rc)
-
-set(devilutionx_ios_SRCS
-  Packaging/iOS/Sources/AppDelegate.h
-  Packaging/iOS/Sources/AppDelegate.m
-)
 
 if(NOT NONET)
   list(APPEND devilutionx_SRCS
@@ -321,11 +313,6 @@ if(NOT NONET)
 endif()
 
 set(BIN_TARGET devilutionx)
-
-if(MACOSX)
-  list(APPEND devilutionx_SRCS
-    Packaging/macOS/AppIcon.icns)
-endif()
 
 if(SWITCH)
   list(APPEND devilutionx_SRCS
@@ -358,17 +345,7 @@ if(HELLFIRE)
   add_definitions(-DHELLFIRE)
 endif()
 
-# When building for iOS, add devilutionx as a static library
-
-if(IOS)
-  set(BIN_TARGET devilutionx_ios)
-  add_library(devilutionx STATIC ${devilutionx_SRCS})
-  set(executable_sources ${devilutionx_ios_SRCS})
-else()
-  set(executable_sources ${devilutionx_SRCS})
-endif()
-
-add_executable(${BIN_TARGET} WIN32 MACOSX_BUNDLE ${executable_sources})
+add_executable(${BIN_TARGET} WIN32 MACOSX_BUNDLE ${devilutionx_SRCS})
 
 # Copy the font to the build directory to it works from the build directory
 file(COPY "Packaging/resources/CharisSILB.ttf" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}")
@@ -592,24 +569,18 @@ if(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 endif()
 
 if(APPLE)
+  set_source_files_properties("./Packaging/macOS/AppIcon.icns" PROPERTIES MACOSX_PACKAGE_LOCATION Resources)
+  set_source_files_properties("./Packaging/resources/CharisSILB.ttf" PROPERTIES MACOSX_PACKAGE_LOCATION Resources)
+  set(MACOSX_BUNDLE_GUI_IDENTIFIER com.diasurgical.devilutionx)
+  set(MACOSX_BUNDLE_COPYRIGHT Unlicense)
   set(MACOSX_BUNDLE_BUNDLE_NAME devilutionx)
   set(MACOSX_BUNDLE_INFO_STRING ${PROJECT_VERSION})
   set(MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION})
   set(MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION})
   set(MACOSX_BUNDLE_LONG_VERSION_STRING "Version ${PROJECT_VERSION}")
-  set(MACOSX_BUNDLE_COPYRIGHT Unlicense)
+  set(CMAKE_OSX_DEPLOYMENT_TARGET "10.12.0")
+  set_target_properties(${BIN_TARGET} PROPERTIES MACOSX_BUNDLE_ICON_FILE "AppIcon")
   set_target_properties(${BIN_TARGET} PROPERTIES MACOSX_BUNDLE_INFO_PLIST "${CMAKE_CURRENT_SOURCE_DIR}/Packaging/macOS/Info.plist")
-  set_source_files_properties("./Packaging/resources/CharisSILB.ttf" PROPERTIES MACOSX_PACKAGE_LOCATION Resources)
-
-  if(IOS)
-    set(MACOSX_BUNDLE_GUI_IDENTIFIER com.diasurgical.devilutionx.ios)
-    set(CMAKE_OSX_DEPLOYMENT_TARGET "10.0")
-  else()
-    set(MACOSX_BUNDLE_GUI_IDENTIFIER com.diasurgical.devilutionx.macos)
-    set(CMAKE_OSX_DEPLOYMENT_TARGET "10.12.0")
-    set_source_files_properties("./Packaging/macOS/AppIcon.icns" PROPERTIES MACOSX_PACKAGE_LOCATION Resources)
-    set_target_properties(${BIN_TARGET} PROPERTIES MACOSX_BUNDLE_ICON_FILE "AppIcon")
-  endif()
 
   install (TARGETS ${BIN_TARGET} DESTINATION ./)
 
