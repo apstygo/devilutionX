@@ -52,6 +52,7 @@ cmake --build . -j $(sysctl -n hw.physicalcpu)
 </details>
 
 <details><summary>iOS</summary>
+  
 1. Copy your `diabdat.mpq` to `ios` folder
 2. Run:
 
@@ -61,8 +62,9 @@ sh fetch_sdl.sh
 sh generate_dependencies_project.sh
 ```
 
-3. Open the project in `ios/Xcode`
+3. Open the project in ```ios/Xcode```
 4. Choose simulator as destination (device builds are not supported yet), build and run
+
 </details>
 
 <details><summary>FreeBSD</summary>
